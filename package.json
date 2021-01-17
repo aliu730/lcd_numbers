@@ -1,0 +1,26 @@
+{
+  "name": "lcd_numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliu730/lcd_numbers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliu730/lcd_numbers/issues"
+  },
+  "homepage": "https://github.com/aliu730/lcd_numbers#readme"
+}
