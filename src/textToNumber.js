@@ -1,4 +1,4 @@
-const textToNumber = (num) => {
+const textToNumberLayerOne = (num) => {
     let str = num.toString();
     let dict = {
         "1": " \n |\n |",
@@ -6,9 +6,9 @@ const textToNumber = (num) => {
     }
     return dict[str];
 }
-let arr = [];
-arr.push(textToNumber(1));
-arr.push(textToNumber(2))
-console.log(arr.join(" "))
+// let arr = [];
+// arr.push(textToNumber(1));
+// arr.push(textToNumber(2))
+// console.log(arr.join(" "))
 
-module.exports = textToNumber;
+module.exports = textToNumberLayerOne;
