@@ -1,41 +1,41 @@
-const lcdNumberLayerOne = require('../src/lcdNumberLayerOne.js');
+const lcdNumberLayerThree = require('../src/lcdNumberLayerThree.js');
 
 test('Should render layer no horizontal line', () => {
-    expect(lcdNumberLayerOne(1)).toBe('  ');
+    expect(lcdNumberLayerThree(1)).toBe('  |');
 });
 
 test('Should render layer one horizontal line for 2', () => {
-    expect(lcdNumberLayerOne(2)).toBe(' _');
+    expect(lcdNumberLayerThree(2)).toBe(' |_');
 });
 
 test('Should render layer one horizontal line for 3', () => {
-    expect(lcdNumberLayerOne(3)).toBe(' _');
+    expect(lcdNumberLayerThree(3)).toBe(' _|');
 });
 
 test('Should render layer no horizontal line 4', () => {
-    expect(lcdNumberLayerOne(4)).toBe(' ');
+    expect(lcdNumberLayerThree(4)).toBe('  |');
 });
 
 test('Should render layer no horizontal line 5', () => {
-    expect(lcdNumberLayerOne(5)).toBe(' _');
+    expect(lcdNumberLayerThree(5)).toBe(' _|');
 });
 
 test('Should render layer no horizontal line 6', () => {
-    expect(lcdNumberLayerOne(6)).toBe(' _');
+    expect(lcdNumberLayerThree(6)).toBe('|_|');
 });
 
 test('Should render layer no horizontal line 7', () => {
-    expect(lcdNumberLayerOne(7)).toBe(' _');
+    expect(lcdNumberLayerThree(7)).toBe('  |');
 });
 
 test('Should render layer no horizontal line 8', () => {
-    expect(lcdNumberLayerOne(8)).toBe(' _');
+    expect(lcdNumberLayerThree(8)).toBe('|_|');
 });
 
 test('Should render layer no horizontal line 9', () => {
-    expect(lcdNumberLayerOne(9)).toBe(' _');
+    expect(lcdNumberLayerThree(9)).toBe('  |');
 });
 
 test('Should render layer no horizontal line 0', () => {
-    expect(lcdNumberLayerOne(0)).toBe(' _');
+    expect(lcdNumberLayerThree(0)).toBe('|_|');
 });
