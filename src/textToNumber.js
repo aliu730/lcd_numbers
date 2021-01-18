@@ -1,14 +1,23 @@
-const textToNumberLayerOne = (num) => {
-    let str = num.toString();
-    let dict = {
-        "1": " \n |\n |",
-        "2": " _\n _|\n|_"
-    }
-    return dict[str];
-}
-// let arr = [];
-// arr.push(textToNumber(1));
-// arr.push(textToNumber(2))
-// console.log(arr.join(" "))
+const textToNumberLayerThree = require("./lcdNumberLayerThree");
+const textToNumberLayerTwo = require("./lcdNumberLayerTwo");
+const textToNumberLayerOne = require("./lcdNumberLayerOne");
 
-module.exports = textToNumberLayerOne;
+const numberToLcd = (num) => {
+    if (!num) {
+        return "";
+    }
+    let layerOne = "";
+    let layerTwo = "";
+    let layerThree = "";
+    let strNumber = num.toString();
+    for (let i = 0; i < strNumber.length; i++) {
+        layerOne += textToNumberLayerOne(num[i]);
+        layerTwo += textToNumberLayerTwo(num[i]);
+        layerThree += textToNumberLayerThree(num[i]);
+    }
+    return layerOne + '\n' + layerTwo + '\n' + layerThree;
+}
+
+console.log(numberToLcd("1234567890"))
+
+module.exports = numberToLcd;

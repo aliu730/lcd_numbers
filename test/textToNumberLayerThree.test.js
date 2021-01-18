@@ -5,7 +5,7 @@ test('Should render layer no horizontal line', () => {
 });
 
 test('Should render layer one horizontal line for 2', () => {
-    expect(lcdNumberLayerThree(2)).toBe(' |_');
+    expect(lcdNumberLayerThree(2)).toBe('|_ ');
 });
 
 test('Should render layer one horizontal line for 3', () => {

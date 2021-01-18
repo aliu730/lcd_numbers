@@ -13,15 +13,15 @@ test('Should render layer one horizontal line for 3', () => {
 });
 
 test('Should render layer no horizontal line 4', () => {
-    expect(lcdNumberLayerTwo(4)).toBe('| |');
+    expect(lcdNumberLayerTwo(4)).toBe('|_|');
 });
 
 test('Should render layer no horizontal line 5', () => {
-    expect(lcdNumberLayerTwo(5)).toBe('|_');
+    expect(lcdNumberLayerTwo(5)).toBe('|_ ');
 });
 
 test('Should render layer no horizontal line 6', () => {
-    expect(lcdNumberLayerTwo(6)).toBe('|_');
+    expect(lcdNumberLayerTwo(6)).toBe('|_ ');
 });
 
 test('Should render layer no horizontal line 7', () => {
